@@ -26,8 +26,7 @@ const Tech = () => {
   return (
     <>
       <motion.div className="w-full text-center py-10">
-        <p className={styles.sectionSubText}>What I Use to Build</p>
-        <h2 className={styles.sectionHeadText}>Technologies</h2>
+        <h2 className={`${styles.sectionHeadText} md:!text-[72px] sm:!text-[60px] xs:!text-[50px] !text-[48px]`}>Technologies</h2>
       </motion.div>
 
       <div className="flex flex-row flex-wrap justify-center gap-10">

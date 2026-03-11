@@ -43,7 +43,7 @@ const Navbar = () => {
               } hover:text-[#ffffffac] text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`#${link.id}`}>{link.title.toUpperCase()}</a>
             </li>
           ))}
         </ul>
@@ -89,7 +89,7 @@ const Navbar = () => {
               }}
               className="text-[22px] mt-2 text-[#ffffffb0] hover:text-white font-medium cursor-pointer transition-all"
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`#${link.id}`}>{link.title.toUpperCase()}</a>
             </p>
           ))}
         </div>

@@ -4,6 +4,8 @@ import {
   creator,
   web,
   javascript,
+  cpp,
+  sql,
   typescript,
   html,
   css,
@@ -117,6 +119,14 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
+  },
+  {
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "SQL",
+    icon: sql,
   },
 ];
 

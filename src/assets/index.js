@@ -31,6 +31,10 @@ const mongodb =
   "https://ik.imagekit.io/bqzlidc77g/my%20portfolio/tech/mongodb.png?updatedAt=1749961104590";
 const nodejs =
   "https://ik.imagekit.io/bqzlidc77g/my%20portfolio/tech/nodejs.png?updatedAt=1749961104709";
+const cpp =
+  "https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png";
+const sql =
+  "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg";
 const reactjs =
   "https://ik.imagekit.io/bqzlidc77g/my%20portfolio/tech/reactjs.png?updatedAt=1749961105057";
 const redux =
@@ -80,6 +84,8 @@ export {
   javascript,
   mongodb,
   nodejs,
+  cpp,
+  sql,
   reactjs,
   redux,
   tailwind,
