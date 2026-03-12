@@ -132,16 +132,16 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Freelance Frontend Developer",
+    title: "Freelance Full Stack Developer",
     company_name: "Self-employed",
     icon: freelance, // Replace with any icon you like
     iconBg: "#0188E3",
     date: "Jan 2026 - Present",
     points: [
-      "Built responsive and interactive web apps using React.js, Tailwind CSS, and GSAP.",
-      "Developed and deployed modern landing pages and portfolio websites for clients.",
-      "Integrated APIs and handled form validation, animations, and smooth scroll effects.",
-      "Delivered pixel-perfect UI designs based on Figma and Adobe XD mockups.",
+      "Building robust and scalable full-stack web applications using React.js, Node.js, and MongoDB.",
+      "Designing responsive frontends with Tailwind CSS and performance-optimized backends.",
+      "Developing and deploying secure RESTful APIs and managing database architectures.",
+      "Integrating complex animations and real-time features for seamless user experiences.",
     ],
   },
 ];
