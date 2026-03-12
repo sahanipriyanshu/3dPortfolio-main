@@ -46,6 +46,17 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title.toUpperCase()}</a>
             </li>
           ))}
+          <li
+            className="text-[#ffffff69] hover:text-[#ffffffac] text-[18px] font-medium cursor-pointer"
+          >
+            <a 
+              href="https://drive.google.com/file/d/1rVoCnieyPpiQ7MUAdsdzQCOwK7OTY7ig/view?usp=drive_link" 
+              target="_blank" 
+              rel="noreferrer"
+            >
+              RESUME
+            </a>
+          </li>
         </ul>
 
         {/* Mobile menu icon */}
@@ -92,6 +103,18 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title.toUpperCase()}</a>
             </p>
           ))}
+          <p
+            className="text-[22px] mt-2 text-[#ffffffb0] hover:text-white font-medium cursor-pointer transition-all"
+          >
+            <a 
+              href="https://drive.google.com/file/d/1rVoCnieyPpiQ7MUAdsdzQCOwK7OTY7ig/view?usp=drive_link" 
+              target="_blank" 
+              rel="noreferrer"
+              onClick={() => setToggle(false)}
+            >
+              RESUME
+            </a>
+          </p>
         </div>
       </div>
 
