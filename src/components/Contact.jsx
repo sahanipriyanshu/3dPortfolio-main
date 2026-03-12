@@ -28,17 +28,17 @@ const Contact = () => {
     // Replace these placeholder strings with your actual IDs from EmailJS dashboard.
     emailjs
       .send(
-        "service_vo3xyti",
-        "template_bfsbdre",
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           name: form.name, // matching {{name}} in auto-reply
           from_email: form.email,
           email: form.email, // matching {{email}} in auto-reply
           message: form.message,
-          title: "New Message from Portfolio", // matching {{title}} in auto-reply
+          title: `New Message from ${form.name}`, // matching {{title}} in auto-reply
         },
-        "FFAjacmEWMGbzKGyl"
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
