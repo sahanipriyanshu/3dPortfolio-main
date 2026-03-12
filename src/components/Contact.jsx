@@ -33,7 +33,7 @@ const Contact = () => {
           from_email: form.email,
           message: form.message,
         },
-        "F1s2J8sU-B4tW-FwA" // ✅ your public key
+        "FFAjacmEWMGbzKGyl" // ✅ your public key
       )
       .then(
         () => {
