@@ -24,16 +24,21 @@ const Contact = () => {
     e.preventDefault();
     setloading(true);
 
+    // ⚠️ NOTE: The 404 error in the console is usually because of invalid IDs.
+    // Replace these placeholder strings with your actual IDs from EmailJS dashboard.
     emailjs
       .send(
-        "service_vo3xyti", // ✅ your EmailJS service ID
-        "template_bfsbdre", // ✅ your template ID (keep this if same)
+        "service_vo3xyti",
+        "template_bfsbdre",
         {
           from_name: form.name,
+          name: form.name, // matching {{name}} in auto-reply
           from_email: form.email,
+          email: form.email, // matching {{email}} in auto-reply
           message: form.message,
+          title: "New Message from Portfolio", // matching {{title}} in auto-reply
         },
-        "FFAjacmEWMGbzKGyl" // ✅ your public key
+        "FFAjacmEWMGbzKGyl"
       )
       .then(
         () => {

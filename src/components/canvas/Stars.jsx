@@ -8,6 +8,13 @@ const Stars = (props) => {
   const ref = useRef();
   const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
 
+  // Filter out any NaN values in case of issues with the random library
+  for (let i = 0; i < sphere.length; i++) {
+    if (isNaN(sphere[i])) {
+      sphere[i] = 0;
+    }
+  }
+
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
