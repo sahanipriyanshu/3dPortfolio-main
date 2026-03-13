@@ -58,7 +58,7 @@ const About = () => {
         and MongoDB, I thrive on turning complex problems into elegant solutions through 
         Data Structures & Algorithms and competitive programming.
       </motion.p>
-      <div className="mt-20 flex  flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 justify-center sm:justify-start">
         {services.map((service, index) => (
           <ServiceCard key={index} index={index} {...service} />
         ))}

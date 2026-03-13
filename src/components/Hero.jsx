@@ -8,10 +8,10 @@ const Hero = () => {
   return (
     <section className="relative w-full   h-screen mx-auto">
       <div
-        className={`${styles.paddingX} inset-0 sm:top-[100px] top-[120px] absolute max-w-7xl mx-auto flex flex-row items-start gap-8 z-10`}
+        className={`${styles.paddingX} inset-0 sm:top-[1.2rem]  md:top-[120px] top-[100px]  absolute max-w-7xl mx-auto flex sm:flex-row flex-col items-center sm:items-start gap-5 z-10`}
       >
         {/* Left: photo + info + social icons */}
-        <div className="flex flex-col items-center shrink-0">
+        <div className="flex flex-col items-center shrink-0 mt-5 sm:mt-0">
           <img
             src={heroPhoto}
             alt="Priyanshu Sahani"
@@ -62,11 +62,11 @@ const Hero = () => {
         </div>
 
         {/* Right: purple line + headline + tagline */}
-        <div className="flex flex-col justify-center items-center mt-5 shrink-0">
+        <div className="hidden sm:flex flex-col justify-center items-center mt-5 shrink-0">
           <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
           <div className="w-1 sm:h-80 h-40 violet-gradient"></div>
         </div>
-        <div className="min-w-0">
+        <div className="min-w-0 flex flex-col items-center sm:items-start text-center sm:text-left">
           <h1 className={`${styles.heroHeadText} text-white `}>
             Hi, I'm <span className="text-[#915eff]">Priyanshu</span>
           </h1>

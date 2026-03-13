@@ -68,7 +68,7 @@ const Contact = () => {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <h3 className={styles.sectionHeadText}>Contact.</h3>
           
-          <div className="flex gap-4">
+          <div className="flex gap-4 justify-center sm:justify-end">
             <a 
               href="https://github.com/sahanipriyanshu" 
               target="_blank" 
