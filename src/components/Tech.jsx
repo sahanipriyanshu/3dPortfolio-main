@@ -21,7 +21,8 @@ const Tech = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const visibleTechs = isMobile ? technologies.slice(0, 5) : technologies;
+  const numTechs = isMobile ? 5 : 7; // Limit WebGL contexts (browsers restrict to ~8-16)
+  const visibleTechs = technologies.slice(0, numTechs);
 
   return (
     <>
@@ -36,7 +37,7 @@ const Tech = () => {
           </div>
         ))}
 
-        {isMobile && (
+        {technologies.length > numTechs && (
           <div
             onClick={() => navigate("/all-technologies")}
             className="sm:w-36 w-28 h-28 sm:h-36 rounded-full border border-dashed border-[#915eff] flex items-center justify-center cursor-pointer hover:bg-[#915eff]/10 text-[#915eff] text-sm font-medium transition"
