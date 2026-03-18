@@ -1,29 +1,12 @@
 // Tech.jsx
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
-import { useNavigate } from "react-router-dom";
 
 const Tech = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    handleResize(); // initial check
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const numTechs = isMobile ? 5 : 7; // Limit WebGL contexts (browsers restrict to ~8-16)
-  const visibleTechs = technologies.slice(0, numTechs);
-
   return (
     <>
       <motion.div className="w-full text-center py-10">
@@ -31,20 +14,11 @@ const Tech = () => {
       </motion.div>
 
       <div className="flex flex-row flex-wrap justify-center gap-10">
-        {visibleTechs.map((tech) => (
+        {technologies.map((tech) => (
           <div className="sm:w-36 w-28 h-28 sm:h-36" key={tech.name}>
             <BallCanvas icon={tech.icon} />
           </div>
         ))}
-
-        {technologies.length > numTechs && (
-          <div
-            onClick={() => navigate("/all-technologies")}
-            className="sm:w-36 w-28 h-28 sm:h-36 rounded-full border border-dashed border-[#915eff] flex items-center justify-center cursor-pointer hover:bg-[#915eff]/10 text-[#915eff] text-sm font-medium transition"
-          >
-            + More
-          </div>
-        )}
       </div>
     </>
   );

@@ -27,7 +27,6 @@ import {
   threejs,
   dpi,
   prepvora,
-  weatherapp,
 } from "../assets";
 
 export const navLinks = [
@@ -231,26 +230,30 @@ const projects = [
     live_website_link: "",
   },
   {
-    name: "Weather Application",
+    name: "Blockchain E-Voting System",
     description:
-      "Developed and deployed a responsive weather app delivering real-time global weather data.\nImplemented dynamic city search with optimized state management.\nPresented key metrics including temperature, humidity, and wind speed.\nDesigned a mobile-first UI ensuring fast performance and usability.",
+      "Developed a secure, transparent blockchain-based voting platform ensuring tamper-proof vote recording. Implemented role-based access control, fraud prevention, and scalable backend APIs for candidate management and real-time result aggregation.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "javascript",
+        name: "nodejs",
         color: "green-text-gradient",
       },
       {
-        name: "api",
+        name: "mongodb",
         color: "pink-text-gradient",
       },
+      {
+        name: "blockchain",
+        color: "blue-text-gradient",
+      },
     ],
-    image: weatherapp,
-    source_code_link: "https://github.com/sahanipriyanshu/weather_app",
-    live_website_link: "https://sahaniweatherapp.netlify.app/",
+    image: "https://ik.imagekit.io/lzzlwueda/Screenshot%202026-03-18%20102741.png",
+    source_code_link: "https://github.com/sahanipriyanshu/Blockchain-E-Voting.git",
+    live_website_link: "",
   },
 ];
 
