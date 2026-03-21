@@ -173,8 +173,28 @@ const testimonials = [
 ];
 
 const projects = [
-
-
+  {
+    name: "LeetCode GitHub Sync & AI",
+    description:
+      "A Chrome extension that automatically pushes your LeetCode problem submissions directly to your GitHub repository. It also features an AI integration that generates detailed explanations for your code structure and logic, streamlining documentation.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "chrome-extension",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ai",
+        color: "green-text-gradient",
+      },
+    ],
+    image: "https://ik.imagekit.io/lzzlwueda/Screenshot%202026-03-21%20201800.png",
+    source_code_link: "https://github.com/sahanipriyanshu/Chrome-Extension-.git",
+    live_website_link: "",
+  },
   {
     name: "Deep Packet Inspection (DPI) Engine",
     description:
