@@ -50,7 +50,7 @@ const Navbar = () => {
             className="text-[#ffffff69] hover:text-[#ffffffac] text-[18px] font-medium cursor-pointer"
           >
             <a 
-              href="https://drive.google.com/file/d/1rVoCnieyPpiQ7MUAdsdzQCOwK7OTY7ig/view?usp=drive_link" 
+              href="https://drive.google.com/file/d/10BiQXq9DdSaAFUarvCN-Iap6NxiKgmpv/view?usp=sharing" 
               target="_blank" 
               rel="noreferrer"
             >
@@ -107,7 +107,7 @@ const Navbar = () => {
             className="text-[22px] mt-2 text-[#ffffffb0] hover:text-white font-medium cursor-pointer transition-all"
           >
             <a 
-              href="https://drive.google.com/file/d/1rVoCnieyPpiQ7MUAdsdzQCOwK7OTY7ig/view?usp=drive_link" 
+              href="https://drive.google.com/file/d/10BiQXq9DdSaAFUarvCN-Iap6NxiKgmpv/view?usp=sharing" 
               target="_blank" 
               rel="noreferrer"
               onClick={() => setToggle(false)}
