@@ -255,6 +255,40 @@ const projects = [
     source_code_link: "https://github.com/sahanipriyanshu/Blockchain-E-Voting.git",
     live_website_link: "",
   },
+  {
+    name: "Logic Looper",
+    description:
+      "A full-stack MERN application designed for daily cognitive challenges. Features deterministic 'Puzzle of the Day', offline-first architecture with IndexedDB, cloud sync, global leaderboards, GitHub-style activity heatmap, and streak tracking. Built with a premium UI and smooth animations.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "indexeddb",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "express",
+        color: "green-text-gradient",
+      },
+    ],
+    image: "https://ik.imagekit.io/lzzlwueda/Screenshot%202026-03-21%20194413.png",
+    source_code_link: "https://github.com/sahanipriyanshu/Puzzle-Project.git",
+    live_website_link: "https://puzzle-project-production.up.railway.app",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
